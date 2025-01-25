@@ -1,38 +1,139 @@
 .robot-container {
+  text-align: center;
+  position: relative;
+  border: 2px solid white;
+  margin: auto;
 }
 
 .robot-face-shape {
+  position: relative;
+  border: 10px solid #742edc;
+  border-radius: 20%;
+  margin: 25% 0 0 0;
+  width: 450px;
+  height: 500px;
+  background: radial-gradient(#252269, #9f9ebb);
 }
 
-.robot-eye-left {
+.robot-eye-left,
+.robot-eye-right {
+  position: relative;
+  background: radial-gradient(white, orange, red);
+  width: 20px;
+  height: 100px;
+  top: 23%;
+  left: 22%;
 }
 
 .robot-eye-right {
+  left: 67%;
+  top: 2.5%;
+}
+.robot-eye-right:after {
+  background: radial-gradient(white, orange, red);
+  content: "Not AI";
+  text-align: center;
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
 }
 
 .robot-ear-left {
+  position: absolute;
+  top: 300px;
+  left: -105px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid rebeccapurple;
+  border-left: 100px solid orange;
 }
 
 .robot-ear-right {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid orange;
+  border-right: 100px solid rebeccapurple;
+  position: absolute;
+  top: 300px;
+  left: 456px;
 }
 
 .robot-nose {
+  position: absolute;
+  background: linear-gradient(blue, purple);
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: relative;
+  width: 100px;
+  text-align: center;
+  left: -10px;
+}
+.robot-nose:before {
+  border-bottom: 35px solid blue;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -35px;
+  width: 0;
 }
 
 .robot-teeth {
+  z-index: 1;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  height: 80px;
+  width: 300px;
+  position: absolute;
+  left: 60px;
+  margin: 5px;
+  padding: 0;
 }
 
 .robot-tooth {
+  display: inline-block;
+  border: transparent;
+  border-radius: 0 0 100% 100%;
+  background: radial-gradient(white, red);
+  width: 42.5px;
+  height: 50px;
+  margin: 1px;
+  text-align: center;
 }
 
 .robot-hair-style {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  bottom: 550px;
+  margin: auto;
 }
 
 .robot-hair-one {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: greenyellow;
+  margin: 0 5px;
 }
 
 .robot-hair-two {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  background-color: orangered;
+  margin: 0 5px;
 }
 
 .robot-hair-three {
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  background-color: green;
 }
