@@ -14,23 +14,36 @@
   background: radial-gradient(#252269, #9f9ebb);
 }
 
-.robot-eye-left,
-.robot-eye-right {
+.robot-eye-left {
   position: relative;
-  background: radial-gradient(white, orange, red);
-  width: 20px;
+  background: radial-gradient(
+    rgb(255, 255, 255, 50%),
+    rgb(255, 165, 0, 50%),
+    rgb(255, 0, 0, 50%)
+  );
+  border: 2px solid #252269;
+  border-radius: 50%;
+  width: 100px;
   height: 100px;
   top: 23%;
-  left: 22%;
+  left: 19%;
 }
 
 .robot-eye-right {
+  position: relative;
   left: 67%;
   top: 2.5%;
+  background: radial-gradient(white, orange, red);
+  border: transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 100px;
 }
 .robot-eye-right:after {
   background: radial-gradient(white, orange, red);
-  content: "Not AI";
+  border: transparent;
+  border-radius: 50%;
+  content: "";
   text-align: center;
   height: 20px;
   left: -40px;
@@ -61,7 +74,9 @@
 
 .robot-nose {
   position: absolute;
-  background: linear-gradient(blue, purple);
+  background: url(https://picsum.photos/id/237/200/300);
+  background-position: center;
+  background-size: cover;
   display: inline-block;
   height: 55px;
   margin-left: 20px;
@@ -72,15 +87,13 @@
   left: -10px;
 }
 .robot-nose:before {
-  border-bottom: 35px solid blue;
+  border-bottom: 35px solid yellow;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   content: "";
-  height: 0;
   left: 0;
   position: absolute;
   top: -35px;
-  width: 0;
 }
 
 .robot-teeth {
@@ -100,9 +113,9 @@
   border: transparent;
   border-radius: 0 0 100% 100%;
   background: radial-gradient(white, red);
-  width: 42.5px;
-  height: 50px;
-  margin: 1px;
+  width: 2.65em;
+  height: 3.125em;
+  margin: 0.0625em;
   text-align: center;
 }
 
@@ -110,7 +123,7 @@
   position: relative;
   width: 300px;
   height: 50px;
-  bottom: 550px;
+  bottom: 556px;
   margin: auto;
 }
 
